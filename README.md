@@ -56,13 +56,12 @@ npm run dev
 
 This project is built with:
 
-- Vite
+- TanStack Start (full-stack React with SSR)
+- TanStack Router (file-based routing)
 - TypeScript
-- React
 - shadcn-ui
 - Tailwind CSS
 
 ## How can I deploy this project?
 
 Simply open [Aurora]({{AURORA_PROJECT_URL}}) and click on Share -> Publish.
-

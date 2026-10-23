@@ -1,0 +1,40 @@
+[constraints]
+max_cycles = 0
+max_coupling = 'A'
+max_cc = 30
+no_god_files = true
+
+[[layers]]
+name = 'lib'
+paths = ['app/lib/*']
+order = 0
+
+[[layers]]
+name = 'hooks'
+paths = ['app/hooks/*']
+order = 1
+
+[[layers]]
+name = 'server'
+paths = ['app/server/*']
+order = 1
+
+[[layers]]
+name = 'components'
+paths = ['app/components/*']
+order = 2
+
+[[layers]]
+name = 'routes'
+paths = ['app/routes/*']
+order = 3
+
+[[boundaries]]
+from = 'app/lib/*'
+to = 'app/routes/*'
+reason = 'Lib must not depend on routes'
+
+[[boundaries]]
+from = 'app/lib/*'
+to = 'app/components/*'
+reason = 'Lib must not depend on components'

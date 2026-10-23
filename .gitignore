@@ -5,12 +5,20 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
-lerna-debug.log*
 
 node_modules
 dist
 dist-ssr
 *.local
+
+# TanStack Start build artifacts
+.vinxi
+.output
+.tanstack
+
+# Vite timestamp files
+vite.config.timestamp_*
+app.config.timestamp_*
 
 # Editor directories and files
 .vscode/*

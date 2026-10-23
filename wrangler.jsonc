@@ -1,0 +1,10 @@
+{
+  "name": "aurora-user-app",
+  "main": "@tanstack/react-start/server-entry",
+  "compatibility_flags": ["nodejs_compat"],
+  "compatibility_date": "2025-04-01",
+  "assets": {
+    "binding": "ASSETS",
+    "directory": ".output/public"
+  }
+}
